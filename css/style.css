@@ -24,7 +24,7 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
 .site-header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  background: #111;
+  background:var(--gris);
   z-index: 1000;
   transition: transform 0.3s ease;
 }
@@ -34,7 +34,7 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
   align-items: center;
   padding: 1rem 0;
 }
-.logo img { height: 40px; }
+.logo img { height: 3rem; width: 100%; }
 
 /* Nav */
 .nav ul {
@@ -43,7 +43,7 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
   gap: 1.5rem;
 }
 .nav a {
-  color: #fff;
+  color: var(--negro);
   text-decoration: none;
   font-weight: 500;
 }
