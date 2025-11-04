@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
+
+:root {
+--negro: #1c1c1cff;
+--gris: #daddd8ff;
+--hueso: #ecebe4ff;
+--claro: #eef0f2ff;
+--blanco: #fafaffff;
+}
+
+/* Contenedor central */
+.container {
+  max-width: 1200px;   /* límite de ancho */
+  margin: 0 auto;      /* centrado */
+  padding: 0 1rem;     /* espacio lateral en móviles */
+}
+
+/* Header */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #111;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.logo img { height: 40px; }
+
+/* Nav */
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  z-index: 1200;
+}
+.menu-toggle span {
+  width: 28px; height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.menu-toggle.active span:nth-child(2) { opacity: 0; }
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Responsive menú */
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100vh;
+    background: rgba(0,0,0,0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    z-index: 1000;
+  }
+  .nav ul { flex-direction: column; gap: 2rem; }
+  .nav.active { transform: translateX(0); }
+  .menu-toggle { display: flex; }
+}
+
+/* Footer */
+.site-footer {
+  background: #111;
+  color: #fff;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  text-align: center;
+}
