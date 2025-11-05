@@ -1,0 +1,112 @@
+.contacto-info {
+    background-color: var(--hueso);
+    padding: 6rem 0;
+    color: var(--negro);
+  }
+  
+  .contacto-info h2 {
+    font-family: "Montserrat", serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--negro);
+    padding-left: 1rem;
+  }
+  
+  .intro-contacto {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    max-width: 80ch;
+  }
+  
+  .contacto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .contacto-card {
+    background-color: var(--claro);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .contacto-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contacto-item i {
+    font-size: 1.2rem;
+    color: var(--negro);
+  }
+  
+  .contacto-item a {
+    font-size: 0.95rem;
+    color: var(--negro);
+    text-decoration: none;
+  }
+  
+  .contacto-item a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Card de email destacado */
+  .email-card-minimal {
+    background-color: var(--blanco);
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    
+    text-align: center;
+  }
+  
+  .email-card-minimal i {
+    font-size: 1.5rem;
+    color: var(--negro);
+  }
+  
+  .email-card-minimal a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--negro);
+    text-decoration: none;
+  }
+  
+  .email-card-minimal a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contacto-info h2 {
+      font-size: 2rem;
+    }
+  
+    .intro-contacto {
+      padding: 0 1rem;
+    }
+  
+    .email-card-minimal {
+        flex-direction: column;
+      }
+    
+      .email-card-minimal i {
+        margin-bottom: 0.5rem;
+      }
+  }
+  

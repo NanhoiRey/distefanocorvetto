@@ -1,0 +1,83 @@
+:root {
+    --negro: #1c1c1cff;
+    --gris: #daddd8ff;
+    --hueso: #ecebe4ff;
+    --claro: #eef0f2ff;
+    --blanco: #fafaffff;
+    }
+
+.contacto-bg {
+    position: relative;
+    background-image: url('/img/hero-right.png'); /* tu imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+    
+  }
+  
+  /* Overlay para contraste */
+  .contacto-bg .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+  }
+  
+  /* Card centrado */
+  .card-contacto {
+    position: relative;
+    z-index: 1;
+    background-color: var(--gris);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .card-contacto h2 {
+    font-family: "Montserrat", serif;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    color: var(--negro);
+  }
+  
+  .card-contacto p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-whatsapp i {
+    margin-right: 0.5rem;
+  }
+  
+  .btn-whatsapp:hover {
+    background-color: #1ebe5d;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card-contacto {
+      padding: 2rem;
+    }
+  }
+  

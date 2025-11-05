@@ -13,6 +13,19 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
 --blanco: #fafaffff;
 }
 
+/* Estado inicial */
+.animar {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Estado visible */
+.animar.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Top bar */
 .top-bar {
   background: #111;          /* franja oscura */
@@ -35,9 +48,20 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
 
 /* Contenedor central */
 .container {
+  max-width: 1200px !important;   /* límite de ancho */
+  margin: 0 auto !important;      /* centrado */
+  padding:0  1rem !important;     /* espacio lateral en móviles */
+}
+.container-hero{
   max-width: 1200px;   /* límite de ancho */
   margin: 0 auto;      /* centrado */
-  padding: 0 1rem;     /* espacio lateral en móviles */
+  padding: 0 1rem; 
+
+}
+.container-sections {
+  max-width: 80ch; /* o 960px si prefieres fijo */
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 /* Header */
@@ -49,11 +73,16 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
   transition: transform 0.3s ease;
   
 }
+.site-header.sombra-activa {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 .header-inner {
+  width: 100% !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 4rem;
+  padding: 1rem 4rem !important;
+  
 }
 .logo img { height: 3rem; width: 100%; }
 
@@ -62,11 +91,31 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
   display: flex;
   list-style: none;
   gap: 1.5rem;
+  
 }
 .nav a {
+  position: relative;
   color: var(--negro);
   text-decoration: none;
   font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 0;
+  height: 1px;
+  background-color: var(--negro);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .no-scroll {
@@ -159,6 +208,10 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
       padding: 0.5rem 3rem;
       border-top: 1px solid var(--blanco);
       border-radius: 10px;
+      
+    }
+    .nav li a:hover{
+      background-color: rgba(255, 0, 0, 0);
       
     }
     

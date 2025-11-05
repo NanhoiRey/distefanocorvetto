@@ -1,0 +1,85 @@
+/* Contenedor general */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  /* Sección Servicios */
+  .servicios-v2 {
+    background-color: var(--gris);
+    padding: 6rem 0;
+    color: var(--negro);
+  }
+  
+  /* Header */
+  .servicios-header {
+    margin-bottom: 4rem;
+    text-align: left;
+  }
+  
+  .servicios-header h2 {
+    font-family: "Montserrat", serif;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--negro);
+    padding-left: 1rem;
+  }
+  
+  .servicios-header p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  /* Grid de servicios */
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+  
+  
+  .servicio-card {
+    background-color: var(--hueso);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .servicio-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--negro);
+  }
+  
+  .servicio-card h3 {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .servicio-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+  }
+  
+  /* Animación al hacer scroll */
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .servicios-header {
+      padding: 0 1.5rem;
+    }
+  }
+  

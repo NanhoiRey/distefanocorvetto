@@ -25,3 +25,28 @@ function initScrollHeader() {
     lastScroll = currentScroll;
   });
 }
+
+
+window.addEventListener("scroll", () => {
+  const hero = document.querySelector(".hero");
+  const scrollY = window.scrollY;
+  hero.style.setProperty("--scroll", scrollY);
+  const bg = hero.querySelector("::before"); // not accessible directly
+  hero.style.setProperty("--bg-offset", scrollY * 0.3 + "px");
+});
+
+
+
+
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  });
+
+  document.querySelectorAll(".animar").forEach(el => observer.observe(el));
+
+

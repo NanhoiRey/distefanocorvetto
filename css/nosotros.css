@@ -1,0 +1,95 @@
+/* Sección Nosotros Minimalista */
+.nosotros-minimal {
+    background-color: var(--hueso);
+    padding: 6rem 0;
+    color: var(--negro);
+  }
+  
+  .intro-nosotros {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    text-align: left;
+  }
+  
+  .intro-nosotros h2 {
+    font-family: "Montserrat", serif;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--negro);
+    padding-left: 1rem;
+  }
+  
+  .intro-nosotros p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .intro-nosotros .lead {
+    font-weight: 600;
+    font-size: 1.15rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .intro-nosotros strong {
+    font-weight: 600;
+  }
+  
+  /* Cards de abogados */
+  .cards-abogados {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card-abogado {
+    background-color: var(--claro);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    max-width: 320px;
+    text-align: left;
+  }
+  
+  .card-abogado img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card-abogado .info {
+    padding: 1.5rem;
+  }
+  
+  .card-abogado h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .card-abogado span {
+    display: block;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .card-abogado p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .intro-nosotros {
+      padding: 0 1.5rem;
+    }
+  
+    .cards-abogados {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

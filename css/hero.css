@@ -12,13 +12,32 @@
   
   /* Hero */
   .hero {
-    background: url('../img/hero-top.jpg') center/cover no-repeat;
-    color: var(--negro);
+    position: relative;
+    height: 100vh;
     display: flex;
     align-items: center;
-    min-height: 100vh;
-    position: relative;
+    justify-content: center;
+    color: var(--negro);
+    overflow: hidden;
+    z-index: 1;
   }
+  
+  /* Fondo parallax */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 130%; /* más alto para permitir desplazamiento */
+    background-image: url('/img/hero-top.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(0);
+    z-index: -1;
+    transition: transform 0.1s ease-out;
+  }
+  
   
   .hero::after {
     content: "";
@@ -48,7 +67,7 @@
   
   .hero-text h1 {
     font-family: "EB Garamond", serif;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     width: 50%;
   }
