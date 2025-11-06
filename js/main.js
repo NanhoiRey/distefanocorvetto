@@ -8,7 +8,17 @@ function initMenu() {
     toggle.classList.toggle("active");
     nav.classList.toggle("active");
     body.classList.toggle("no-scroll");
-    header.classList.toggle("menu-open"); // activa el borde inferior
+    header.classList.toggle("menu-open");
+  });
+
+  // 🔒 Cierra el menú al hacer clic en cualquier enlace dentro de .nav
+  nav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      toggle.classList.remove("active");
+      nav.classList.remove("active");
+      body.classList.remove("no-scroll");
+      header.classList.remove("menu-open");
+    });
   });
 }
 function initScrollHeader() {

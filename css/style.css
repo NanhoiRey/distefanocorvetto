@@ -28,7 +28,7 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
 
 /* Top bar */
 .top-bar {
-  background: #111;          /* franja oscura */
+  background: #111111b6;          /* franja oscura */
   color: #fff;
   font-size: 0.9rem;
   padding: 0.3rem 5rem;
@@ -71,6 +71,7 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
   background: var(--gris);
   z-index: 1000;
   transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   
 }
 .site-header.sombra-activa {
@@ -151,16 +152,16 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
 
 .whatsapp-float {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   bottom: 20px;       /* distancia desde abajo */
   right: 20px;        /* distancia desde la derecha */
-  background-color: var(--hueso);
-  color:var(--negro);
+  background-color: #111111b6; 
+  color:var(--blanco);
   
   text-align: center;
   font-size: 32px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 8px rgba(29, 26, 22, 0.3);
   z-index: 2000;
   display: flex;
   justify-content: center;
@@ -172,7 +173,8 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
 
 .whatsapp-float:hover {
   transform: scale(1.1);
-  background-color: var(--blanco);
+  background-color: var(--hueso);
+  color: var(--negro);
 }
 
 /* Responsive menú */

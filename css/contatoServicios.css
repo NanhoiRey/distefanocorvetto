@@ -79,5 +79,11 @@
     .card-contacto {
       padding: 2rem;
     }
+
+    .card-contacto h2 {
+
+      font-size: 1.6rem;
+
+    }
   }
   

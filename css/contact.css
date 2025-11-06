@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
   
   .contacto-item i {
@@ -103,10 +103,12 @@
   
     .email-card-minimal {
         flex-direction: column;
+        margin: 0 !important;
       }
     
       .email-card-minimal i {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
       }
   }
   

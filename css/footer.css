@@ -1,7 +1,7 @@
 .footer-minimal {
     background-color: var(--negro);
     color: var(--hueso);
-    padding: 3rem 0;
+    padding: 1rem 0;
     text-align: center;
   }
   
@@ -16,7 +16,7 @@
   }
   
   .footer-content p {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: #ccc;
   }
   
