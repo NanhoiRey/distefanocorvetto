@@ -31,6 +31,9 @@
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
   }
   
   .contacto-card h3 {
@@ -42,8 +45,9 @@
   .contacto-item {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 2rem !important;
     margin-bottom: 0rem;
+    
   }
   
   .contacto-item i {
