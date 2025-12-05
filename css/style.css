@@ -25,26 +25,34 @@ body { font-family: "Saira", sans-serif; margin: 0; padding: 0; }
   opacity: 1;
   transform: translateY(0);
 }
-
 /* Top bar */
 .top-bar {
   background: #111111b6;          /* franja oscura */
   color: #fff;
   font-size: 0.9rem;
   padding: 0.3rem 5rem;
-  
 }
 
 .top-bar-inner {
   display: flex;
   justify-content: flex-end; /* alineado a la derecha */
-  gap: 2rem;
+  gap: 1rem;
 }
 
+/* Contact links */
 .contact-item {
   display: flex;
   align-items: center;
+  text-decoration: none;   /* sin subrayado */
+  color: inherit;          /* mantiene el color del padre (#fff) */
+  transition: color 0.3s ease;
 }
+
+.contact-item:hover {
+  color:var(--hueso);          /* ejemplo: dorado al pasar el mouse */
+}
+
+
 
 /* Contenedor central */
 .container {
