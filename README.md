@@ -5,7 +5,7 @@ El proyecto fue diseñado con un enfoque en identidad visual, accesibilidad y pr
 
 ---
 
-## ✨ Características principales
+##  Características principales
 - **Diseño original y responsive**: Adaptado a dispositivos móviles, tablets y escritorio.  
 - **HTML5 + CSS + JavaScript**: Código limpio y modular para fácil mantenimiento.  
 - **Identidad visual personalizada**: Se trabajó en tipografía, paleta de colores y estilo gráfico propio.  
@@ -29,7 +29,7 @@ Google Search Console para indexación y monitoreo.
 
 ---
 
-## 🚀 Instalación y uso
+##  Instalación y uso
 Clonar el repositorio:
 
 git clone https://github.com/NanhoiRey/distefanocorvetto.git
